@@ -1,0 +1,60 @@
+Test case 1:
+Give I'm a non-registere user
+When i search for an item
+And this item doesn't exist
+Then the system return a error message "No results were found for your search <item>"
+
+Test case 2:
+Give I'm a non-registere user
+When i search for an item
+And the item has differents models
+Then the system need to return all the differents models.
+
+Test case 3:
+Give I'm a non-registere user
+When i search for an item
+And the item didn't has stock
+Then the system show the item 
+But bellow the item show a messagem "No stock"
+
+Test case 4:
+Give I'm a non-registere user
+When i search for an item
+Then the system show the item 
+
+Test case 5:
+Give I search for an item
+When I click in "add to cart" this item
+And click in "Continue shopping"
+Then the system add this item i my cart
+And show in the cart icon that we have 1 product 
+
+Test case 6:
+Give I search for an item
+And my cart already has a one item
+When I click in "add to cart" this item
+Then the system add this item i my cart
+And click in "Continue shopping"
+And show in the cart icon that we have 2 products
+
+Test case 7:
+Give I search for an item
+When I click in "add to cart" this item
+And click in "Proceed to checkout"
+Then the system redirect me to my cart to confirm all the items in my sale.
+
+Test case 8:
+Give I want to finish my sale
+When I click in the cart icon
+Then the system redirect me to my cart to confirm all items in my sale.
+
+Test case 9:
+Give I open my cart
+When I confirm my sale 
+Then the system redirect me to register on the site or just login in my account
+
+Test case 10:
+Give  I want to see my cart
+When i click on the cart icon
+Then the system show a list with all procucts I select
+And give to me option to withdraw the items.
